@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Florenza Tiles and Flooring</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="logo/FLORENZA_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="elite.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<style>
+    #navbar {
+        background-color: #2c2c2c;
+        color: #000;
+        border: 1px solid grey;
+    }
+</style>
+
+<body class="overflow-x-hidden">
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+
+    <div class="sidebar" id="sidebar" aria-hidden="true">
+        <button class="close-button" aria-label="Close menu">
+            <img class="invert" src="icons/close-lg.svg" alt="">
+        </button>
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <li><a href="../Florenza/categories/all-tiles.html">Categories</a></li>
+
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Florenza</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="nav_bar  " id="navbar">
+        <nav>
+            <div class="nav_logo left_hidden">
+                <img id="florenza-logo" src="logo/FLORENZA_logo.png" alt="">
+                <img src="logo/Floorenza-logo.png" width="250px" alt="">
+            </div>
+            <div class="nav_list left_hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../Florenza/categories/all-tiles.html">Categories</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ol class="dropdown-menu dropdown-page bg-dark linker-bg">
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="tile-selection.html">Tile Guide</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="FAQ.html">FAQ'S</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="invert hmburger" src="icons/hamburger.svg" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero about-2 text-center ">
+        <div class="top_hidden  about_head">
+            <h1>Contact Us</h1>
+            <img class="invert" src="icons/down.svg" alt="">
+        </div>
+    </section>
+
+
+    <!-- Description Section -->
+    <section class="description-section">
+        <div class="container">
+            <div class="description-flex">
+                <div class="description-item">
+                    <h2 class="display-5">How to Contact Florenza</h2>
+                    <p>Reach out to us for all your tile and flooring needs. We're here to help with expert advice and
+                        high-quality products.</p>
+                </div>
+                <div class="description-item">
+                    <h2 class="display-5">Get in Touch</h2>
+                    <p>For any queries, feel free to contact us. Your query will be answered within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <!-- Form Section -->
+                <div class="col-lg-6 form-section">
+                    <h2 class="display-5 mb-4">Send Us a Message</h2>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">Please provide your full name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                            <div class="invalid-feedback">Please provide your phone number.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
+                    </form>
+                    <div id="successAlert" class="alert alert-success success-alert" role="alert">
+                        Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
+                    </div>
+                </div>
+                <!-- Map and Details Section -->
+                <div class="col-lg-6">
+                    <h2 class="display-5 mb-4">Find Us</h2>
+                    <div class="map-section">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.419415484681!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c6b3a0b%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1633020000000!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="display-6">Contact Details</h3>
+                        <p><strong>Address:</strong> 123 Tile Street, Flooring City, FL 12345</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> info@florenzatiles.com</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Website"><i class="fas fa-globe"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo-social">
+                <!-- <img src="logo//FLORENZA_logo.png" alt="" class="footer-logo"> -->
+                <img src="logo//floorenza-logo.png" alt=" Homes Logo" class="footer-logo" />
+
+                <p>Florenza — your one-stop destination for premium tiles and flooring solutions that bring
+                    elegance, durability, and style to every space.</p>
+
+                <div class="social-icons/">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3 class="footer-title">Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-products">
+                <h3 class="footer-title">Products</h3>
+                <ul>
+                    <li>SINKS</li>
+                    <li>BATHROOM</li>
+                    <li>PIETRA FUTURA</li>
+                    <li>FIANDRE</li>
+                    <li>ENERGIE KER</li>
+                    <li>SKINROCK</li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 class="footer-title">Get in touch</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> 0321 0101010</li>
+                    <li><i class="fas fa-envelope"></i> Florenza.north@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i>Commercial Lane 12 DHA
+                        Karachi, Sindh,<br />Pakistan-72400</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Font Awesome for icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- Custom JS for form validation and success alert -->
+    <script>
+        // Bootstrap form validation
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                            form.classList.add('was-validated') // Only add if invalid
+                        } else {
+                            event.preventDefault(); // Prevent actual form submission for demo
+                            document.getElementById('successAlert').style.display = 'block';
+                            form.reset();
+                            form.classList.remove('was-validated'); // Remove validation state on success
+                            // Optionally hide alert after 5 seconds
+                            setTimeout(function () {
+                                document.getElementById('successAlert').style.display = 'none';
+                            }, 5000);
+                        }
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>

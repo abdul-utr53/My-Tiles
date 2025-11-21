@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../logo/FLORENZA_logo.png" type="image/x-icon">
+
+    <title>Florenza — Tile Comparison</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../animate.css">
+    <link rel="stylesheet" href="../elite.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    <div class="sidebar" id="sidebar" aria-hidden="true">
+        <button class="close-button" aria-label="Close menu">
+            <img class="invert" src="icons/close-lg.svg" alt="">
+        </button>
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="#">Our Services</a>
+            <a href="#">Categories</a>
+            <a href="#">Pricing</a>
+            <a href="about.html">About Florenza</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="nav_bar " id="navbar">
+        <nav>
+            <div class="nav_logo left_hidden">
+                <img id="florenza-logo" src="../logo/FLORENZA_logo.png" alt="">
+                <img src="../logo/Floorenza-logo.png" width="250px" alt="">
+            </div>
+            <div class="nav_list left_hidden">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ol class="dropdown-menu dropdown-page bg-dark linker-bg">
+                            <li><a class="dropdown-item" href="../pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="../about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="../tile-selection.html">Tile Guide</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../FAQ.html">FAQ'S</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="invert hmburger" src="icons/hamburger.svg" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <div class="container container-compare">
+        <header class="d-flex align-items-center justify-content-between mb-4">
+            <div>
+                <h1 class="h3 display-5 mb-0">Florenza — Tile Comparison</h1>
+                <p class="text-muted small mb-0">Compare your doubts here — choose up to 2 tiles to compare</p>
+            </div>
+            <div>
+                <a href="compare.html" class="btn btn-outline-secondary"
+                    onclick="sessionStorage.removeItem('florenza_compare')">Reset Compare</a>
+            </div>
+        </header>
+
+        <div class="nav-tiles">
+            <ul class="nav nav-pills mb-4" id="categoryTabs" role="tablist">
+                <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="pill"
+                        data-bs-target="#floor" type="button">Floor Tiles</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill"
+                        data-bs-target="#wall" type="button">Wall Tiles</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill"
+                        data-bs-target="#outdoor" type="button">Outdoor Tiles</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill"
+                        data-bs-target="#bathroom" type="button">Bathroom Tiles</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill"
+                        data-bs-target="#kitchen" type="button">Kitchen Tiles</button></li>
+            </ul>
+        </div>
+
+
+        <div class="tab-content">
+
+
+            <div class="tab-pane fade show active" id="floor">
+                <h2 class="section-title">Floor Tiles</h2>
+                <div class="row g-3">
+
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-1" data-name="Marble Glossy White"
+                            data-size="24 x 24 inch" data-material="Porcelain" data-finish="Glossy" data-water="0.5%"
+                            data-price="Rs 3,250 per box" data-img="assets/tiles/floor1.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor1.jpg" alt="Marble Glossy White"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Marble Glossy White</div>
+                                <div class="tile-meta">24 x 24 • Porcelain • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-2" data-name="Stone Texture Grey" data-size="24 x 24 inch"
+                            data-material="Ceramic" data-finish="Matt" data-water="3%" data-price="Rs 2,850 per box"
+                            data-img="assets/tiles/floor2.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor2.jpg" alt="Stone Texture Grey"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Stone Texture Grey</div>
+                                <div class="tile-meta">24 x 24 • Ceramic • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-3" data-name="Carrara White Veins"
+                            data-size="32 x 32 inch" data-material="Porcelain" data-finish="High Gloss"
+                            data-water="0.3%" data-price="Rs 4,200 per box" data-img="assets/tiles/floor3.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor3.jpg" alt="Carrara White Veins"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Carrara White Veins</div>
+                                <div class="tile-meta">32 x 32 • Porcelain • High Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-4" data-name="Dark Stone" data-size="24 x 48 inch"
+                            data-material="Gres Porcellanato" data-finish="Matt" data-water="0.2%"
+                            data-price="Rs 15,150 per box" data-img="assets/tiles/floor4.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor4.jpg" alt="Dark Stone"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Dark Stone</div>
+                                <div class="tile-meta">24 x 48 • Gres Porcellanato • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-5" data-name="Stone" data-size="24 x 48 inch"
+                            data-material="Gres Porcellanato" data-finish="Gloss" data-water="0.5%"
+                            data-price="Rs 10,150 per box" data-img="assets/tiles/floor5.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor5.jpg" alt="Stone"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Stone</div>
+                                <div class="tile-meta">24 x 48 • Gres Porcellanato • Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-6" data-name="Matt" data-size="24 x 48 inch"
+                            data-material="Gres Porcellanato" data-finish="Gloss" data-water="0.5%"
+                            data-price="Rs 3,150 per box" data-img="assets/tiles/floor6.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor6.jpg" alt="Matt"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Matt</div>
+                                <div class="tile-meta">24 x 48 • Gres Porcellanato • Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-7" data-name="Stone Matt" data-size="24 x 48 inch"
+                            data-material="Gres Porcellanato" data-finish="Gloss" data-water="0.5%"
+                            data-price="Rs 9,150 per box" data-img="assets/tiles/floor7.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor7.jpg" alt="Stone Matt"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Stone Matt</div>
+                                <div class="tile-meta">24 x 48 • Gres Porcellanato • Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-8" data-name="Dark Matt" data-size="24 x 48 inch"
+                            data-material="Gres Porcellanato" data-finish="Goss" data-water="0.5%"
+                            data-price="Rs 11,150 per box" data-img="assets/tiles/floor8.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor8.jpg" alt="Dark Matt"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Dark Matt</div>
+                                <div class="tile-meta">24 x 48 • Gres Porcellanato • Goss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-9" data-name="Carrara White Veins"
+                            data-size="32 x 32 inch" data-material="Porcelain" data-finish="High Gloss"
+                            data-water="0.3%" data-price="Rs 9,500 per box" data-img="assets/tiles/floor9.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor9.jpg" alt="Carrara White Veins"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Carrara White Veins</div>
+                                <div class="tile-meta">32 x 32 • Porcelain • High Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-10" data-name="Stone Texture Grey"
+                            data-size="24 x 24 inch" data-material="Ceramic" data-finish="Matt" data-water="3%"
+                            data-price="Rs 7,800 per box" data-img="assets/tiles/floor10.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor10.jpg" alt="Stone Texture Grey"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Stone Texture Grey</div>
+                                <div class="tile-meta">24 x 24 • Ceramic • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-11" data-name="Marble Glossy Beige"
+                            data-size="24 x 36 inch" data-material="Porcelain" data-finish="Glossy" data-water="0.4%"
+                            data-price="Rs 10,200 per box" data-img="assets/tiles/floor11.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor11.jpg" alt="Marble Glossy Beige"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Marble Glossy Beige</div>
+                                <div class="tile-meta">24 x 36 • Porcelain • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-12" data-name="Dark Slate" data-size="18 x 18 inch"
+                            data-material="Natural Stone" data-finish="Matt" data-water="2%"
+                            data-price="Rs 8,600 per box" data-img="assets/tiles/floor12.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/floor12.jpg" alt="Dark Slate"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Dark Slate</div>
+                                <div class="tile-meta">18 x 18 • Natural Stone • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-13" data-name="Ivory Marble" data-size="24 x 24 inch"
+                            data-material="Marble" data-finish="Glossy" data-water="0.3%" data-price="Rs 12,400 per box"
+                            data-img="assets/tiles/floor13.jpeg">
+                            <div class="img-wrap"><img src="assets/tiles/floor13.jpeg" alt="Ivory Marble"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Ivory Marble</div>
+                                <div class="tile-meta">24 x 24 • Marble • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-14" data-name="Rustic Oak" data-size="20 x 20 inch"
+                            data-material="Porcelain" data-finish="Textured" data-water="1.5%"
+                            data-price="Rs 9,200 per box" data-img="assets/tiles/floor14.jpeg">
+                            <div class="img-wrap"><img src="assets/tiles/floor14.jpeg" alt="Rustic Oak"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Rustic Oak</div>
+                                <div class="tile-meta">20 x 20 • Porcelain • Textured</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-15" data-name="Ocean Blue" data-size="16 x 16 inch"
+                            data-material="Ceramic" data-finish="Glossy" data-water="0.8%" data-price="Rs 7,500 per box"
+                            data-img="assets/tiles/floor15.jpeg">
+                            <div class="img-wrap"><img src="assets/tiles/floor15.jpeg" alt="Ocean Blue"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Ocean Blue</div>
+                                <div class="tile-meta">16 x 16 • Ceramic • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="floor-16" data-name="Sunset Terracotta" data-size="12 x 24 inch"
+                            data-material="Terracotta" data-finish="Matte" data-water="3%"
+                            data-price="Rs 10,300 per box" data-img="assets/tiles/floor16.jpeg">
+                            <div class="img-wrap"><img src="assets/tiles/floor16.jpeg" alt="Sunset Terracotta"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Sunset Terracotta</div>
+                                <div class="tile-meta">12 x 24 • Terracotta • Matte</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="wall">
+                <h2 class="section-title">Wall Tiles</h2>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-1" data-name="Glossy Subway Tile" data-size="3 x 6 inches"
+                            data-material="Ceramic" data-finish="Glossy" data-water="< 1%" data-price="Rs. 850 / sqm"
+                            data-img="assets/tiles/wall1.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall1.jpg" alt="Glossy Subway Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Glossy Subway Tile</div>
+                                <div class="tile-meta">3 x 6 • Ceramic • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-2" data-name="Textured Ceramic" data-size="8 x 8 inches"
+                            data-material="Ceramic" data-finish="Textured" data-water="< 0.8%"
+                            data-price="Rs. 1,100 / sqm" data-img="assets/tiles/wall2.jpeg">
+                            <div class="img-wrap"><img src="assets/tiles/wall2.jpeg" alt="Textured Ceramic"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Textured Ceramic</div>
+                                <div class="tile-meta">8 x 8 • Ceramic • Textured</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-3" data-name="Mirror Glass Tile" data-size="12 x 12 inches"
+                            data-material="Glass" data-finish="Mirror" data-water="N/A" data-price="Rs. 2,900 / sqm"
+                            data-img="assets/tiles/wall3.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall3.jpg" alt="Mirror Glass Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Mirror Glass Tile</div>
+                                <div class="tile-meta">12 x 12 • Glass • Mirror</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-4" data-name="Decorative Relief Tile"
+                            data-size="10 x 10 inches" data-material="Ceramic" data-finish="Relief" data-water="< 1%"
+                            data-price="Rs. 1,700 / sqm" data-img="assets/tiles/wall4.jpeg">
+                            <div class="img-wrap"><img src="assets/tiles/wall4.jpeg" alt="Decorative Relief Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Decorative Relief Tile</div>
+                                <div class="tile-meta">10 x 10 • Ceramic • Relief</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 1 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-5" data-name="Textured Stone Look Tile"
+                            data-size="12 x 18 inches" data-material="Ceramic" data-finish="Matt" data-water="< 0.5%"
+                            data-price="Rs. 2,050 / sqm" data-img="assets/tiles/wall5.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall5.jpg" alt="Textured Stone Look Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Textured Stone Look Tile</div>
+                                <div class="tile-meta">12 x 18 • Ceramic • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-6" data-name="Glossy Floral Pattern Tile"
+                            data-size="10 x 16 inches" data-material="Porcelain" data-finish="Glossy"
+                            data-water="< 0.3%" data-price="Rs. 2,300 / sqm" data-img="assets/tiles/wall6.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall6.jpg" alt="Glossy Floral Pattern Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Glossy Floral Pattern Tile</div>
+                                <div class="tile-meta">10 x 16 • Porcelain • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-7" data-name="Marble Vein Wall Tile"
+                            data-size="12 x 24 inches" data-material="Gres" data-finish="High Gloss" data-water="< 0.2%"
+                            data-price="Rs. 2,850 / sqm" data-img="assets/tiles/wall7.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall7.jpg" alt="Marble Vein Wall Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Marble Vein Wall Tile</div>
+                                <div class="tile-meta">12 x 24 • Gres • High Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-8" data-name="Soft Beige Matt Tile"
+                            data-size="8 x 12 inches" data-material="Ceramic" data-finish="Matt" data-water="< 0.7%"
+                            data-price="Rs. 1,450 / sqm" data-img="assets/tiles/wall8.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall8.jpg" alt="Soft Beige Matt Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Soft Beige Matt Tile</div>
+                                <div class="tile-meta">8 x 12 • Ceramic • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-9" data-name="Artistic Mosaic Tile"
+                            data-size="12 x 12 inches" data-material="Porcelain" data-finish="Mosaic Gloss"
+                            data-water="< 0.4%" data-price="Rs. 3,100 / sqm" data-img="assets/tiles/wall9.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall9.jpg" alt="Artistic Mosaic Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Artistic Mosaic Tile</div>
+                                <div class="tile-meta">12 x 12 • Porcelain • Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-10" data-name="Wave Texture Wall Tile"
+                            data-size="10 x 20 inches" data-material="Ceramic" data-finish="Textured" data-water="< 1%"
+                            data-price="Rs. 1,900 / sqm" data-img="assets/tiles/wall10.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall10.jpg" alt="Wave Texture Wall Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Wave Texture Wall Tile</div>
+                                <div class="tile-meta">10 x 20 • Ceramic • Textured</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-11" data-name="Pearl White Gloss Tile"
+                            data-size="12 x 18 inches" data-material="Porcelain" data-finish="Gloss" data-water="< 0.5%"
+                            data-price="Rs. 2,600 / sqm" data-img="assets/tiles/wall11.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall11.jpg" alt="Pearl White Gloss Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Pearl White Gloss Tile</div>
+                                <div class="tile-meta">12 x 18 • Porcelain • Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="wall-12" data-name="Grey Linear Design Tile"
+                            data-size="10 x 14 inches" data-material="Ceramic" data-finish="Satin" data-water="< 0.9%"
+                            data-price="Rs. 1,550 / sqm" data-img="assets/tiles/wall12.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/wall12.jpg" alt="Grey Linear Design Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Grey Linear Design Tile</div>
+                                <div class="tile-meta">10 x 14 • Ceramic • Satin</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="tab-pane fade" id="outdoor">
+                <h2 class="section-title">Outdoor Tiles</h2>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-1" data-name="Anti-slip Paver" data-size="300 x 300 mm"
+                            data-material="Concrete" data-finish="Rough" data-water="High-resistance"
+                            data-price="Rs. 1,900 / sqm" data-img="assets/tiles/outdoor1.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor1.jpg" alt="Anti-slip Paver"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Anti-slip Paver</div>
+                                <div class="tile-meta">300 x 300 • Concrete • Rough</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-2" data-name="Porous Outdoor Tile"
+                            data-size="400 x 400 mm" data-material="Stone" data-finish="Textured"
+                            data-water="Weatherproof" data-price="Rs. 2,700 / sqm" data-img="assets/tiles/outdoor2.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor2.jpg" alt="Porous Outdoor Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Porous Outdoor Tile</div>
+                                <div class="tile-meta">400 x 400 • Stone • Textured</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-3" data-name="Decking Tile" data-size="various"
+                            data-material="Composite" data-finish="Grained" data-water="Resistant"
+                            data-price="Rs. 3,100 / sqm" data-img="assets/tiles/outdoor3.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor3.jpg" alt="Decking Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Decking Tile</div>
+                                <div class="tile-meta">Various • Composite • Grained</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-4" data-name="Porcelain Slip Resistant"
+                            data-size="300 x 600 mm" data-material="Porcelain" data-finish="Anti-slip" data-water="Low"
+                            data-price="Rs. 2,900 / sqm" data-img="assets/tiles/outdoor4.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor4.jpg" alt="Porcelain Slip Resistant">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Porcelain Slip Resistant</div>
+                                <div class="tile-meta">300 x 600 • Porcelain • Anti-slip</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 1 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-2" data-name="Textured Patio Block"
+                            data-size="400 x 400 mm" data-material="Cement" data-finish="Textured"
+                            data-water="Weather-resistant" data-price="Rs. 2,150 / sqm"
+                            data-img="assets/tiles/outdoor2.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor5.jpg" alt="Textured Patio Block"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Textured Patio Block</div>
+                                <div class="tile-meta">400 x 400 • Cement • Textured</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-3" data-name="Heavy-Duty Parking Tile"
+                            data-size="300 x 600 mm" data-material="Porcelain" data-finish="Matt"
+                            data-water="Low-absorption" data-price="Rs. 2,450 / sqm"
+                            data-img="assets/tiles/outdoor3.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor6.jpg" alt="Heavy-Duty Parking Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Heavy-Duty Parking Tile</div>
+                                <div class="tile-meta">300 x 600 • Porcelain • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-4" data-name="Stone Texture Paver"
+                            data-size="350 x 350 mm" data-material="Concrete" data-finish="Stone-Feel"
+                            data-water="High-durability" data-price="Rs. 1,980 / sqm"
+                            data-img="assets/tiles/outdoor4.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor7.jpg" alt="Stone Texture Paver"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Stone Texture Paver</div>
+                                <div class="tile-meta">350 x 350 • Concrete • Stone-Feel</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-5" data-name="Outdoor Grip Tile"
+                            data-size="300 x 450 mm" data-material="Porcelain" data-finish="Anti-slip"
+                            data-water="Weather-proof" data-price="Rs. 2,300 / sqm"
+                            data-img="assets/tiles/outdoor5.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor8.jpg" alt="Outdoor Grip Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Outdoor Grip Tile</div>
+                                <div class="tile-meta">300 x 450 • Porcelain • Anti-slip</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-6" data-name="Rock Finish Courtyard Tile"
+                            data-size="450 x 450 mm" data-material="Concrete" data-finish="Rock-Finish"
+                            data-water="High-strength" data-price="Rs. 2,600 / sqm"
+                            data-img="assets/tiles/outdoor6.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor9.jpg" alt="Rock Finish Courtyard Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Rock Finish Courtyard Tile</div>
+                                <div class="tile-meta">450 x 450 • Concrete • Rock-Finish</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-7" data-name="Rustic Pathway Tile"
+                            data-size="300 x 300 mm" data-material="Cement" data-finish="Rustic"
+                            data-water="Moisture-resistant" data-price="Rs. 1,750 / sqm"
+                            data-img="assets/tiles/outdoor7.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor10.jpg" alt="Rustic Pathway Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Rustic Pathway Tile</div>
+                                <div class="tile-meta">300 x 300 • Cement • Rustic</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-8" data-name="Porous Garden Block"
+                            data-size="330 x 330 mm" data-material="Concrete" data-finish="Porous"
+                            data-water="Drainage-friendly" data-price="Rs. 1,880 / sqm"
+                            data-img="assets/tiles/outdoor8.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor11.jpg" alt="Porous Garden Block"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Porous Garden Block</div>
+                                <div class="tile-meta">330 x 330 • Concrete • Porous</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="outdoor-9" data-name="Rough Terrain Tile"
+                            data-size="500 x 500 mm" data-material="Porcelain" data-finish="Grip"
+                            data-water="Outdoor-grade" data-price="Rs. 3,100 / sqm"
+                            data-img="assets/tiles/outdoor9.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/outdoor12.jpg" alt="Rough Terrain Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Rough Terrain Tile</div>
+                                <div class="tile-meta">500 x 500 • Porcelain • Grip</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="bathroom">
+                <h2 class="section-title">Bathroom Tiles</h2>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-1" data-name="Anti-slip Bathroom" data-size="30 x 30 cm"
+                            data-material="Ceramic" data-finish="Matte Anti-slip" data-water="High-resistance"
+                            data-price="Rs. 1,600 / sqm" data-img="assets/tiles/bathroom1.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom1.jpg" alt="Anti-slip Bathroom"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Anti-slip Bathroom</div>
+                                <div class="tile-meta">30 x 30 • Ceramic • Anti-slip</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-2" data-name="Ceramic Subway" data-size="7.5 x 15 cm"
+                            data-material="Ceramic" data-finish="Glossy" data-water="<1%" data-price="Rs. 950 / sqm"
+                            data-img="assets/tiles/bathroom2.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom2.jpg" alt="Ceramic Subway"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Ceramic Subway</div>
+                                <div class="tile-meta">7.5 x 15 • Ceramic • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-3" data-name="Porcelain Bathroom" data-size="40 x 40 cm"
+                            data-material="Porcelain" data-finish="Satin" data-water="<0.1%"
+                            data-price="Rs. 2,100 / sqm" data-img="assets/tiles/bathroom3.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom3.jpg" alt="Porcelain Bathroom"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Porcelain Bathroom</div>
+                                <div class="tile-meta">40 x 40 • Porcelain • Satin</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-4" data-name="Small Pattern Tile" data-size="various"
+                            data-material="Ceramic" data-finish="Patterned" data-water="N/A"
+                            data-price="Rs. 1,800 / sqm" data-img="assets/tiles/bathroom4.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom4.jpg" alt="Small Pattern Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Small Pattern Tile</div>
+                                <div class="tile-meta">Various • Ceramic • Patterned</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 1 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-5" data-name="Elegant Wave Tile" data-size="various"
+                            data-material="Ceramic" data-finish="Gloss Wave" data-water="N/A"
+                            data-price="Rs. 2,050 / sqm" data-img="assets/tiles/bathroom5.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom5.jpg" alt="Elegant Wave Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Elegant Wave Tile</div>
+                                <div class="tile-meta">Various • Ceramic • Gloss Wave</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-6" data-name="Soft Blue Mosaic" data-size="various"
+                            data-material="Porcelain" data-finish="Mosaic" data-water="N/A" data-price="Rs. 2,300 / sqm"
+                            data-img="assets/tiles/bathroom6.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom6.jpg" alt="Soft Blue Mosaic"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Soft Blue Mosaic</div>
+                                <div class="tile-meta">Various • Porcelain • Mosaic</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-7" data-name="Matte Grey Bathroom Tile" data-size="various"
+                            data-material="Ceramic" data-finish="Matt" data-water="N/A" data-price="Rs. 1,950 / sqm"
+                            data-img="assets/tiles/bathroom7.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom7.jpg" alt="Matte Grey Bathroom Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Matte Grey Bathroom Tile</div>
+                                <div class="tile-meta">Various • Ceramic • Matt</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-8" data-name="Abstract Line Tile" data-size="various"
+                            data-material="Ceramic" data-finish="Line-Pattern" data-water="N/A"
+                            data-price="Rs. 2,150 / sqm" data-img="assets/tiles/bathroom8.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom8.jpg" alt="Abstract Line Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Abstract Line Tile</div>
+                                <div class="tile-meta">Various • Ceramic • Line-Pattern</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-9" data-name="Gloss Cream Tile" data-size="various"
+                            data-material="Porcelain" data-finish="Gloss" data-water="N/A" data-price="Rs. 2,400 / sqm"
+                            data-img="assets/tiles/bathroom9.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom9.jpg" alt="Gloss Cream Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Gloss Cream Tile</div>
+                                <div class="tile-meta">Various • Porcelain • Gloss</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-10" data-name="Pebble Texture Tile" data-size="various"
+                            data-material="Ceramic" data-finish="Textured" data-water="N/A" data-price="Rs. 2,000 / sqm"
+                            data-img="assets/tiles/bathroom10.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom10.jpg" alt="Pebble Texture Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Pebble Texture Tile</div>
+                                <div class="tile-meta">Various • Ceramic • Textured</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-11" data-name="Vintage Pattern Tile" data-size="various"
+                            data-material="Porcelain" data-finish="Patterned" data-water="N/A"
+                            data-price="Rs. 2,550 / sqm" data-img="assets/tiles/bathroom11.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom11.jpg" alt="Vintage Pattern Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Vintage Pattern Tile</div>
+                                <div class="tile-meta">Various • Porcelain • Patterned</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="bath-12" data-name="Diamond Texture Tile" data-size="various"
+                            data-material="Ceramic" data-finish="Geometric Texture" data-water="N/A"
+                            data-price="Rs. 2,200 / sqm" data-img="assets/tiles/bathroom12.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/bathroom12.jpg" alt="Diamond Texture Tile">
+                            </div>
+                            <div class="tile-body">
+                                <div class="tile-title">Diamond Texture Tile</div>
+                                <div class="tile-meta">Various • Ceramic • Geometric Texture</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="kitchen">
+                <h2 class="section-title">Kitchen Tiles</h2>
+                <div class="row g-3">
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="kit-1" data-name="Backsplash Subway" data-size="3 x 6 inches"
+                            data-material="Ceramic" data-finish="Glossy" data-water="<1%" data-price="Rs. 780 / sqm"
+                            data-img="assets/tiles/kitchen1.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/kitchen1.jpg" alt="Backsplash Subway"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Backsplash Subway</div>
+                                <div class="tile-meta">3 x 6 • Ceramic • Glossy</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="kit-2" data-name="Quartz Counter Tile" data-size="various"
+                            data-material="Quartz" data-finish="Polished" data-water="Low" data-price="Rs. 5,400 / sqm"
+                            data-img="assets/tiles/kitchen2.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/kitchen2.jpg" alt="Quartz Counter Tile"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Quartz Counter Tile</div>
+                                <div class="tile-meta">Various • Quartz • Polished</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="kit-3" data-name="Ceramic Countertop" data-size="various"
+                            data-material="Ceramic" data-finish="Matte" data-water="N/A" data-price="Rs. 1,900 / sqm"
+                            data-img="assets/tiles/kitchen3.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/kitchen3.jpg" alt="Ceramic Countertop"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Ceramic Countertop</div>
+                                <div class="tile-meta">Various • Ceramic • Matte</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="tile-card" data-id="kit-4" data-name="Porcelain Worktop" data-size="various"
+                            data-material="Porcelain" data-finish="Polished" data-water="Low"
+                            data-price="Rs. 3,600 / sqm" data-img="assets/tiles/kitchen4.jpg">
+                            <div class="img-wrap"><img src="assets/tiles/kitchen4.jpg" alt="Porcelain Worktop"></div>
+                            <div class="tile-body">
+                                <div class="tile-title">Porcelain Worktop</div>
+                                <div class="tile-meta">Various • Porcelain • Polished</div>
+                            </div>
+                            <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+                        </div>
+                    </div>
+
+                    <!-- 1 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-5" data-name="Glossy Kitchen Backsplash" data-size="various"
+        data-material="Ceramic" data-finish="Gloss" data-water="Low"
+        data-price="Rs. 2,950 / sqm" data-img="assets/tiles/kitchen5.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen5.jpg" alt="Glossy Kitchen Backsplash"></div>
+        <div class="tile-body">
+            <div class="tile-title">Glossy Kitchen Backsplash</div>
+            <div class="tile-meta">Various • Ceramic • Gloss</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 2 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-6" data-name="Matte Stone Kitchen Tile" data-size="various"
+        data-material="Porcelain" data-finish="Matt" data-water="Low"
+        data-price="Rs. 3,200 / sqm" data-img="assets/tiles/kitchen6.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen6.jpg" alt="Matte Stone Kitchen Tile"></div>
+        <div class="tile-body">
+            <div class="tile-title">Matte Stone Kitchen Tile</div>
+            <div class="tile-meta">Various • Porcelain • Matt</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 3 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-7" data-name="Premium Counter Surface" data-size="various"
+        data-material="Gres" data-finish="Semi-Gloss" data-water="Low"
+        data-price="Rs. 4,100 / sqm" data-img="assets/tiles/kitchen7.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen.jpg" alt="Premium Counter Surface"></div>
+        <div class="tile-body">
+            <div class="tile-title">Premium Counter Surface</div>
+            <div class="tile-meta">Various • Gres • Semi-Gloss</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 4 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-8" data-name="Textured Beige Wall Tile" data-size="various"
+        data-material="Ceramic" data-finish="Textured" data-water="Low"
+        data-price="Rs. 2,650 / sqm" data-img="assets/tiles/kitchen8.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen8.jpg" alt="Textured Beige Wall Tile"></div>
+        <div class="tile-body">
+            <div class="tile-title">Textured Beige Wall Tile</div>
+            <div class="tile-meta">Various • Ceramic • Textured</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 5 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-9" data-name="Marble Look Kitchen Tile" data-size="various"
+        data-material="Porcelain" data-finish="Polished Marble" data-water="Low"
+        data-price="Rs. 4,350 / sqm" data-img="assets/tiles/kitchen9.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen9.jpg" alt="Marble Look Kitchen Tile"></div>
+        <div class="tile-body">
+            <div class="tile-title">Marble Look Kitchen Tile</div>
+            <div class="tile-meta">Various • Porcelain • Polished Marble</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 6 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-10" data-name="Rustic Brick Kitchen Tile" data-size="various"
+        data-material="Ceramic" data-finish="Brick-Style" data-water="Low"
+        data-price="Rs. 2,400 / sqm" data-img="assets/tiles/kitchen10.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen10.jpg" alt="Rustic Brick Kitchen Tile"></div>
+        <div class="tile-body">
+            <div class="tile-title">Rustic Brick Kitchen Tile</div>
+            <div class="tile-meta">Various • Ceramic • Brick-Style</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 7 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-11" data-name="Grey Slate Counter Tile" data-size="various"
+        data-material="Gres" data-finish="Slate" data-water="Low"
+        data-price="Rs. 3,900 / sqm" data-img="assets/tiles/kitchen11.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen11.jpg" alt="Grey Slate Counter Tile"></div>
+        <div class="tile-body">
+            <div class="tile-title">Grey Slate Counter Tile</div>
+            <div class="tile-meta">Various • Gres • Slate</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+<!-- 8 -->
+<div class="col-12 col-sm-6 col-md-3">
+    <div class="tile-card" data-id="kit-12" data-name="Designer Pattern Kitchen Tile" data-size="various"
+        data-material="Ceramic" data-finish="Patterned" data-water="Low"
+        data-price="Rs. 2,850 / sqm" data-img="assets/tiles/kitchen12.jpg">
+        <div class="img-wrap"><img src="assets/tiles/kitchen12.jpg" alt="Designer Pattern Kitchen Tile"></div>
+        <div class="tile-body">
+            <div class="tile-title">Designer Pattern Kitchen Tile</div>
+            <div class="tile-meta">Various • Ceramic • Patterned</div>
+        </div>
+        <div class="compare-cta"><button class="btn-add-compare">Compare</button></div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="compareBar" class="compare-bar" style="display:none">
+        <div id="compareItems" class="d-flex align-items-center">
+
+        </div>
+        <div class="spacer"></div>
+        <button id="compareGo" class="compare-btn-main" disabled>Compare</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo-social">
+                <!-- <img src="logo//FLORENZA_logo.png" alt="" class="footer-logo"> -->
+                <img src="../logo//floorenza-logo.png" alt=" Homes Logo" class="footer-logo" />
+
+                <p>Florenza — your one-stop destination for premium tiles and flooring solutions that bring
+                    elegance, durability, and style to every space.</p>
+
+                <div class="social-icons/">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3 class="footer-title">Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-products">
+                <h3 class="footer-title">Products</h3>
+                <ul>
+                    <li>SINKS</li>
+                    <li>BATHROOM</li>
+                    <li>PIETRA FUTURA</li>
+                    <li>FIANDRE</li>
+                    <li>ENERGIE KER</li>
+                    <li>SKINROCK</li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 class="footer-title">Get in touch</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> 0321 0101010</li>
+                    <li><i class="fas fa-envelope"></i> Florenza.north@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i>Commercial Lane 12 DHA
+                        Karachi, Sindh,<br />Pakistan-72400</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="compare.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="elite.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Pricing Plans | Florenza | Tiling and Flooring Services</title>
+    <link rel="shortcut icon" href="logo/FLORENZA_logo.png" type="image/x-icon">
+
+</head>
+<style>
+    #navbar {
+        background-color: #2c2c2c;
+        color: #000;
+        border: 1px solid grey;
+    }
+
+    .plan-container {
+        width: 100%;
+        margin: 40px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line1 {
+        border: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        margin-bottom: 12%;
+        margin-top: 2%;
+        position: absolute;
+
+    }
+
+    .line2 {
+        border: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        /* margin-bottom: 12%; */
+        margin-top: 3%;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .plan {
+        width: 400px;
+        height: 600px;
+        /* background-color: bisque; */
+        padding: 2% 2%;
+        position: relative;
+    }
+
+    .plan p {
+        font-size: 40px;
+        /* font-weight: 100; */
+        font-family: 'Times New Roman', Times, serif;
+        padding: 2px 6px;
+    }
+
+    .plan h2 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    sub {
+        font-size: 20px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan span {
+        color: grey;
+        padding: 2% 0;
+    }
+
+    .pricing-images img {
+        width: 50%;
+        height: 450px;
+        margin: 5% 1px;
+    }
+
+    .inner-flex{
+        display: flex;
+    }
+
+    @media screen and (max-width:1200px) {
+        .plan{
+        height: auto;
+    }
+    .line2{
+        width: 90%;
+    }
+    .line1{
+        top: 0px;
+        width: 90%;
+    }
+    .plan-container p{
+        font-size: 22px;
+    }
+
+    .plan-container span{
+        font-size: 12px;
+    }
+        
+    }
+
+    @media screen and (max-width:865px) {
+        .plan-container{
+            flex-wrap: wrap;
+        }
+
+        .plan{
+            width: 50%;
+        }
+        .plan{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        
+    }
+
+    @media screen and (max-width:600px) {
+        .plan{
+            width: 100%;
+        }
+
+        .plan-container h2{
+            margin: 18px 0px;
+        }
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        .plan-container{
+        justify-content: center;
+    }
+
+    .plan{
+        height: auto;
+    }
+    .line2{
+        width: 90%;
+    }
+
+    .line1{
+        top: 0px;
+        width: 90%;
+    }
+    .plan-container p{
+        font-size: 22px;
+    }
+
+    .plan-container span{
+        font-size: 15px;
+    }
+    }
+
+
+    .content{
+        text-transform: capitalize;
+    }
+
+    
+/* Carousel container */
+.carousel-section3 {
+    position: relative;
+    width: 60vw; 
+     max-width: 900px;
+    height: 400px;
+    margin: 40px auto;
+    perspective: 1000px;
+    /* overflow: hidden; */
+}
+
+/* Each slide */
+.slide {
+    position: absolute;
+    top: 0; left: 50%;
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    transition: all 0.6s ease;
+    opacity: 0;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    transform-origin: center center;
+    z-index: 1;
+}
+
+/* Center slide */
+.slide.center {
+    opacity: 1;
+    transform: translateX(-50%) translateZ(0) scale(1);
+    z-index: 5;
+}
+
+/* Right slides */
+.slide.right1 {
+    opacity: 0.8;
+    transform: translateX(calc(-50% + 120%)) translateZ(-100px) scale(0.8);
+    z-index: 4;
+}
+.slide.right2 {
+    opacity: 0.5;
+    transform: translateX(calc(-50% + 220%)) translateZ(-200px) scale(0.6);
+    z-index: 3;
+}
+
+/* Left slides */
+.slide.left1 {
+    opacity: 0.8;
+    transform: translateX(calc(-50% - 120%)) translateZ(-100px) scale(0.8);
+    z-index: 4;
+}
+.slide.left2 {
+    opacity: 0.5;
+    transform: translateX(calc(-50% - 220%)) translateZ(-200px) scale(0.6);
+    z-index: 3;
+}
+
+/* Content text on slides */
+.slide .content {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+</style>
+
+<body style="overflow-x:hidden;">
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    <div class="sidebar" id="sidebar" aria-hidden="true">
+        <button class="close-button" aria-label="Close menu">
+            <img class="invert" src="icons/close-lg.svg" alt="">
+        </button>
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="#">Categories</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Florenza</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="nav_bar  " id="navbar">
+        <nav>
+            <div class="nav_logo left_hidden">
+                <img id="florenza-logo" src="logo/FLORENZA_logo.png" alt="">
+                <img src="logo/Floorenza-logo.png" alt="">
+            </div>
+            <div class="nav_list left_hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ol class="dropdown-menu dropdown-page bg-dark linker-bg">
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="tile-selection.html">Tile Guide</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="FAQ.html">FAQ'S</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <img class="invert hmburger" src="icons/hamburger.svg" alt="">
+            </div>
+        </nav>
+    </div>
+    <section class="about-hero about-4 text-center ">
+        <div class="top_hidden  about_head">
+            <h1>Pricing Plans</h1>
+            <img class="invert" src="icons/down.svg" alt="">
+        </div>
+    </section>
+
+    <div class="header_5">
+        <h1 class="display-4 left_hidden ">Our Pricing Plans</h1>
+    </div>
+
+    <div class="plan-container top_hidden">
+        <div class="plan">
+            <div class=" line1"></div>
+            <h2 class="text-center">Basic Plan</h2>
+            <p class="text-center"><sub>$</sub>2,500 - <sub>$</sub>5,000</p>
+            <hr>
+            <span> <img src="icons/tick.svg" alt="">Interior Design</span>
+            <span> <img src="icons/tick.svg" alt=""> Custom design concept</span>
+            <span> <img src="icons/tick.svg" alt=""> 3D Rendering of proposed design</span>
+            <span> <img src="icons/tick.svg" alt=""> Detailed shopping list of decor items</span>
+            <span> <img src="icons/tick.svg" alt=""> Floor plan and elevations</span>
+            <span> <img src="icons/tick.svg" alt=""> Ideal for refreshing a single room or space</span>
+            <span> <img src="icons/tick.svg" alt=""> Ideal for ensuring project highest standard</span>
+            <div class="line2"></div>
+        </div>
+        <div class="plan">
+            <div class=" line1"></div>
+            <h2 class="text-center">Premium Plan</h2>
+            <p class="text-center"><sub>$</sub>10,000 - <sub>$</sub>20,000</p>
+            <hr>
+            <span> <img src="icons/tick.svg" alt=""> Architectural Design</span>
+            <span> <img src="icons/tick.svg" alt=""> Consultation with principal architect</span>
+            <span> <img src="icons/tick.svg" alt=""> Detailed site analysis and feasibility study</span>
+            <span> <img src="icons/tick.svg" alt=""> Custom design concept</span>
+            <span> <img src="icons/tick.svg" alt=""> Full set of construction
+                documentation</span>
+            <span> <img src="icons/tick.svg" alt=""> Assistance with permit
+                applications</span>
+            <span> <img src="icons/tick.svg" alt=""> Ideal for a building new or major
+                renovation</span>
+            <div class="line2"></div>
+        </div>
+        <div class="plan">
+            <div class=" line1"></div>
+            <h2 class="text-center">Deluxe Plan</h2>
+            <p class="text-center">15% <sub>of Project Cost</sub></p>
+            <hr>
+            <span> <img src="icons/tick.svg" alt="">Project Management</span>
+            <span> <img src="icons/tick.svg" alt=""> Full project management services</span>
+            <span> <img src="icons/tick.svg" alt=""> Co-ordination with contractors</span>
+            <span> <img src="icons/tick.svg" alt=""> Project Scheduling</span>
+            <span> <img src="icons/tick.svg" alt=""> Quality Control</span>
+            <span> <img src="icons/tick.svg" alt=""> Regular Process Report</span>
+            <span> <img src="icons/tick.svg" alt=""> Budget Management</span>
+            <div class="line2"></div>
+        </div>
+    </div>
+
+    <div class="carousel carousel-section3">
+
+       
+
+            <div class="slide center" style="background-image:url('carousel-imgs/1.jpg');">
+                <div class="content">ceramic tiling</div>
+            </div>
+
+            <div class="slide right1" style="background-image:url('carousel-imgs/2.jpg');">
+                <div class="content">mosaic tiling</div>
+            </div>
+
+            <div class="slide right2" style="background-image:url('carousel-imgs/3.jpg');">
+                <div class="content">marble furnishing</div>
+            </div>
+
+            <div class="slide left2" style="background-image:url('carousel-imgs/4.jpg');">
+                <div class="content">floor refinishing</div>
+            </div>
+
+            <div class="slide left1" style="background-image:url('carousel-imgs/5.jpg');">
+                <div class="content">texture painting</div>
+            </div>
+
+        </div>
+
+
+   <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo-social">
+                    <!-- <img src="logo//FLORENZA_logo.png" alt="" class="footer-logo"> -->
+                    <img src="logo//floorenza-logo.png" alt=" Homes Logo" class="footer-logo" />
+
+                    <p>Florenza — your one-stop destination for premium tiles and flooring solutions that bring
+                        elegance, durability, and style to every space.</p>
+
+                    <div class="social-icons/">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-products">
+                    <h3 class="footer-title">Products</h3>
+                    <ul>
+                        <li>SINKS</li>
+                        <li>BATHROOM</li>
+                        <li>PIETRA FUTURA</li>
+                        <li>FIANDRE</li>
+                        <li>ENERGIE KER</li>
+                        <li>SKINROCK</li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Get in touch</h3>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> 0321 0101010</li>
+                        <li><i class="fas fa-envelope"></i> Florenza.north@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Commercial Lane 12 DHA
+                            Karachi, Sindh,<br />Pakistan-72400</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+
+</html>

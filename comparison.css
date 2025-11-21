@@ -1,0 +1,112 @@
+/* Custom styles based on the theme */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+/* .nav_bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav_logo img {
+    height: 50px;
+}
+
+.nav_list ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_list a {
+    color: white;
+    text-decoration: none;
+} */
+
+.section_comparison {
+    padding: 100px 20px 50px;
+    text-align: center;
+}
+
+.header_2 h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.para_2 p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.comparison_table {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #007bff;
+}
+
+/* Animations */
+.left_hidden {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.left_hidden.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.right_hidden {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease;
+}
+
+.right_hidden.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
