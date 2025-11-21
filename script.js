@@ -192,18 +192,18 @@ window.addEventListener("load", () => {
  
 
  
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loading-overlay");
+// window.addEventListener("load", () => {
+//   const loader = document.getElementById("loading-overlay");
 
-  setTimeout(() => {
-    loader.style.opacity = "0";
+//   setTimeout(() => {
+//     loader.style.opacity = "0";
 
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 200); 
+//     setTimeout(() => {
+//       loader.style.display = "none";
+//     }, 200); 
 
-  }, 300);
-});
+//   }, 300);
+// });
  
 
  
