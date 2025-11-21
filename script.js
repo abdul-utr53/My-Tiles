@@ -172,23 +172,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
  
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loading-overlay");
-  const heading = document.getElementById("home-heading");
+// window.addEventListener("load", () => {
+//   const loader = document.getElementById("loading-overlay");
+//   const heading = document.getElementById("home-heading");
 
-  setTimeout(() => {
-    loader.style.opacity = "0";
+//   setTimeout(() => {
+//     loader.style.opacity = "0";
 
-    setTimeout(() => {
-      loader.style.display = "none";
+//     setTimeout(() => {
+//       loader.style.display = "none";
 
      
-      heading.classList.add("start-bounce");
+//       heading.classList.add("start-bounce");
 
-    }, 0);
+//     }, 0);
 
-  }, 500); 
-});
+//   }, 500); 
+// });
  
 
  
